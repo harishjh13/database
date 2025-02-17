@@ -1,5 +1,5 @@
 pool:
-  name: 'finalproject'
+  name: 'finalproject2'
 
 stages:
 - stage: Deploy
