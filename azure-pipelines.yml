@@ -1,5 +1,5 @@
 pool:
-  name: 'finalproject'
+  name: 'jh-agent'
 
 stages:
 - stage: Deploy
@@ -11,10 +11,10 @@ stages:
       inputs:
         connectionType: 'Kubernetes Service Connection'
         #azureSubscription: 'k8sconnection'
-        kubernetesServiceEndpoint: 'k8sconnection'
+        kubernetesServiceEndpoint: 'k8's-connection'
         azureResourceGroup: 'dev-env'
         kubernetesCluster: 'dev-cluster'
-        namespace: 'three-tier'
+        namespace: '3-tier-namespace'
         command: 'apply'
         arguments: '-f DB/database.yml'
       displayName: 'Deploy MongoDB to Kubernetes'
